@@ -1,4 +1,4 @@
-#include "../trie/src.hpp"
+#include "../trie/src2.hpp"
 #include <iostream>
 #include <random>
 #include <string>

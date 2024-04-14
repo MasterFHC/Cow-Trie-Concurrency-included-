@@ -1,10 +1,11 @@
-#include "../trie/src.hpp"
+#include "../trie/src2.hpp"
 #include <iostream>
 #include <random>
 #include <string>
 #include <unordered_map>
 
 int main() {
+    // freopen("output.txt","w",stdout);
     sjtu::Trie trie;
     std::unordered_map<std::string, std::string> map;
 
@@ -20,6 +21,8 @@ int main() {
     for (int i = 0; i < 1000; i++) {
         std::string key = "key" + std::to_string(dis(gen));
         std::string value = "value" + std::to_string(dis(gen));
+        // std::string key = "key" + std::to_string(i);
+        // std::string value = "value" + std::to_string(i);
 
         std::cout << "Inserting " << key << " -> " << value << std::endl;
 

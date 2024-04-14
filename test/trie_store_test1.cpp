@@ -1,4 +1,5 @@
-#include "../trie/src.hpp"
+#include "../trie/src2.hpp"
+#include "../utility/print_utility.hpp"
 #include <iostream>
 #include <thread>
 #include <optional>
@@ -35,7 +36,6 @@ void testConcurrency()
     {
         threads.emplace_back(concurrentPut, std::ref(trie), "key" + std::to_string(i));
     }
-
     // Wait for all Puts to complete
     for (auto& thread : threads) 
     {
@@ -69,6 +69,8 @@ void testConcurrency()
     }
     threads.clear();
 
+    print_trie(trie.getTrie().getroot());
+    getchar();
     // Final check - all should be deleted
     for (int i = 0; i < N; ++i) 
     {

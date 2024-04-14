@@ -7,7 +7,7 @@
 #include <random>
 #include <thread>  // NOLINT
 
-#include "../trie/src.hpp"
+#include "../trie/src2.hpp"
 
 namespace sjtu 
 {

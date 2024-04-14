@@ -11,7 +11,7 @@
 #include <sstream>
 #include <iomanip>
 
-#include "../trie/src.hpp"
+#include "../trie/src2.hpp"
 
 using Integer = std::unique_ptr<uint32_t>;
 

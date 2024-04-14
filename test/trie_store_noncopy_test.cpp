@@ -7,7 +7,7 @@
 #include <random>
 #include <thread>  // NOLINT
 #include <utility>
-#include "../trie/src.hpp"
+#include "../trie/src2.hpp"
 
 //This is the hardest part
 //The TrieStore class should be able to store non-copyable objects
